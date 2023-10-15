@@ -1,0 +1,179 @@
+.VectDigi-Height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.VectAndDigi-Img-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; */
+}
+
+.first-three-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.more-six-pictures {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Vect-Digi_img {
+
+    max-width: 100%;
+    max-height: 100%;
+    width: 31%;
+    height: 200px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    margin-right: 4px;
+
+
+    /* max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1; */
+}
+
+
+.Vect-Digi_img_more {
+    /* max-width: 100%;
+    width: 95%;
+    height: 200px;
+    margin: 5px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1; */
+    /* max-height: 100%;
+    width: 28%;
+    height: 200px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1; */
+
+    max-width: 100%;
+    max-height: 100%;
+    width: 31%;
+    height: 185px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    margin: 10px 4px 0 0
+}
+
+/* Style for the Show More/Show Less button */
+.Show-More {
+    background-color: #fff;
+    border-color: #fff;
+    border-bottom: 2px solid #fa7d9d;
+    border-radius: 4rem;
+    color: #fa7d9d;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.Show-More:hover {
+    background-color: #fa7d9d;
+    color: #fff;
+}
+
+
+/* Style for hiding images */
+.Vect-Digi_img.hide {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.less, .more {
+    background-color: white;
+    color: #fa7d9d;
+    width: 10%;
+    border-radius: 10px;
+    height: 30px;
+    outline: none;
+    border-bottom-color: #fa7d9d;
+}
+
+.less:hover, .more:hover {
+    background-color: #fa7d9d;
+    color: #fff;
+}
+
+
+.More-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 14px 0 0 0;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .VectAndDigi-Img-section {
+        width: 100%;
+    }
+
+
+    .Vect-Digi_img {
+        width: 31%;
+        height: 200px;
+    }
+
+    .less, .more{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .VectDigi-Height{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .VectAndDigi-Img-section {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .first-three-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .more-six-pictures {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .Vect-Digi_img,
+    .Vect-Digi_img_more {
+        width: 30%;
+        height: auto;
+    }
+}
+

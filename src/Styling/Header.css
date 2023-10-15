@@ -1,0 +1,113 @@
+
+
+.Header-Height{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.logo-img{
+    height: 310px;
+}
+
+.Header-heading{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 8px 0 4px 0;
+
+}
+
+.header-subheading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+
+.header-subheading span{
+    color: #fa7d9d;
+    margin-left: 4px;
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    color: grey;
+}
+
+.links a:hover{
+    color: #fa7d9d;
+}
+
+.downArrow1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+
+.downArrow1 .down-Arrow-1{
+    color: grey;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.downArrow1 .down-Arrow-1:hover{
+    color: #fa7d9d;
+    animation: Fade 1.2s infinite;
+    font-size: 40px;
+}
+
+@keyframes Fade{
+    0%, 100%{
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+        font-size: 20px;
+        transform: translateY(-5px);
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .Header-Height{
+        height: 100vh;
+    }
+
+    .logo-img{
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .Header-heading{
+        font-size: 20px;
+    }
+
+    .header-subheading{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:275px) {
+    .logo-img{
+        height: 200px;
+    }
+}

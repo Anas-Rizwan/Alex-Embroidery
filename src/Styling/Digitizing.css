@@ -1,0 +1,128 @@
+.Digitizing-Height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Digi-Heading {
+    color: white;
+    text-align: center;
+}
+
+
+.Dig-por {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.Di-para {
+    width: 70%;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Di-para p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.Digi-Img-Section {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+
+.Digi-img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .Di-para p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        letter-spacing: 0px;
+        margin-left: 3px;
+    }
+
+    .Digi-img {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .Di-para p {
+        font-size: 15.1px;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .Di-para p {
+        font-size: 14px;
+        word-spacing: 1px;
+        margin-left: 3px;
+    }
+}
+
+
+@media screen and (max-width: 815px) {
+    .Di-para p {
+        font-size: 13.7px;
+        word-spacing: 1px;
+        margin-left: 3px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Digitizing-Height {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .Dig-por {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Di-para {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .Di-para p {
+        font-size: 14px;
+        margin-bottom: 6px
+    }
+
+    .Digi-Img-Section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Digi-img {
+        width: 30%;
+        height: 110px;
+    }
+}
