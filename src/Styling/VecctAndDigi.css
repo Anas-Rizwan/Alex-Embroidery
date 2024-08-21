@@ -20,7 +20,7 @@
 
 .first-three-images {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -34,9 +34,9 @@
 
 .Vect-Digi_img {
 
-    max-width: 100%;
-    max-height: 100%;
-    width: 31%;
+    /* max-width: 100%;
+        max-height: 100%; */
+    width: 250px;
     height: 200px;
     transition: opacity 0.3s ease-in-out;
     opacity: 1;
@@ -98,7 +98,8 @@
     padding: 0;
 }
 
-.less, .more {
+.less,
+.more {
     background-color: white;
     color: #fa7d9d;
     width: 10%;
@@ -108,13 +109,14 @@
     border-bottom-color: #fa7d9d;
 }
 
-.less:hover, .more:hover {
+.less:hover,
+.more:hover {
     background-color: #fa7d9d;
     color: #fff;
 }
 
 
-.More-button{
+.More-button {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -135,7 +137,8 @@
         height: 200px;
     }
 
-    .less, .more{
+    .less,
+    .more {
         width: 30%;
     }
 }
@@ -143,11 +146,11 @@
 
 @media screen and (max-width: 768px) {
 
-    .VectDigi-Height{
+    .VectDigi-Height {
         display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .VectAndDigi-Img-section {
@@ -176,4 +179,3 @@
         height: auto;
     }
 }
-

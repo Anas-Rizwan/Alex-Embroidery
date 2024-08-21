@@ -1,6 +1,6 @@
-import img1 from "../pictures/v-d-jeans.jpg"
-import img2 from "../pictures/v-d-shirt.jpg"
-import img3 from "../pictures/v-d-skeleton.jpeg"
+import img1 from "../pictures/bee.jpg"
+import img2 from "../pictures/cow.jpg"
+import img3 from "../pictures/arc.jpg"
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import "../Styling/VecctAndDigi.css"
@@ -48,7 +48,7 @@ const VectAndDigi = () => {
                         ))}
                     </div>
 
-                    {showImages && (
+                    {/* {showImages && (
                         <>
                             <div className="more-six-pictures">
                                 {ImgArr.map((item, index) => (
@@ -72,15 +72,20 @@ const VectAndDigi = () => {
 
                         </>
 
-                    )}
+                    )} */}
 
                 </div>
 
                 <div className="ShowMoreImages">
-                    <button className="Show-More" onClick={toggleImages} style={{ display: showImages ? "none" : "block" }}>
+                    {/* <button className="Show-More" onClick={toggleImages} style={{ display: showImages ? "none" : "block" }}>
                         {showImages ? "Show Less" : "Show More"}
+                    </button> */}
+                    <button data-bs-toggle="modal" data-bs-target="#myModal" className="Show-More" onClick={() => setModalOpen(true)} style={{ display: "block" }}>
+                        {"Show More"}
                     </button>
-
+                    <div className="modal-images">
+                        {Modalpop && <Modalpop setOpenModal={setModalOpen} />}
+                    </div>
                     {/* {showImages && (
                         <button onClick={toggleMoreButtons}>
                             {showMoreButtons ? "Hide Buttons" : "Show Buttons"}
